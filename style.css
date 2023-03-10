@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Signika Negative", sans-serif;
+}
+
+h1 {
+    color: #f8879a;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.emoji-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.choice-button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #f8879a;
+    border-radius: 20px;
+    cursor: pointer;
+    tab-index: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.choice-button:hover {
+    background: #f8879a;
+}
+
+#rock img {
+    width: 40px;
+    height: 40px;
+}
+
+#paper img {
+    width: 30px;
+    height: 30px;
+}
+
+#scissors img {
+    width: 35px;
+    height: 35px;
+}
+
+.start {
+    all: unset;
+    cursor: pointer;
+    tab-index: 0;
+    color: #f8879a;
+    font-weight: bold;
+    border: 2px solid #f8879a;
+    border-radius: 25px;
+    padding: 5px 10px 5px 10px;
+}
+
+.start:hover {
+    background-color: #f8879a;
+    color: white;
+}
+
+#game-broadcaster {
+    text-align: center;
+}
+
+.scores-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.scores-container h1 {
+    text-align: center;
+    border: 2px solid #f8879a;
+    border-radius: 15px;
+    width: 150px;
+}
+
+.titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+}
+
+.player-score, .ai-score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titles span {
+    font-size: 30px;
+    padding: 15px;
+}
