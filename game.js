@@ -2,6 +2,7 @@ const rock = document.getElementById("rock");
 const paper = document.getElementById("paper");
 const scissors = document.getElementById("scissors");
 const gameBroadcaster = document.getElementById("game-broadcaster");
+const resetScoreBtn = document.querySelector(".reset");
 const choices = [rock, paper, scissors];
 const scoreMessages = document.getElementsByTagName("span");
 
@@ -68,5 +69,13 @@ choices.forEach(option => {
         scoreMessages[0].innerHTML = playerScore;
         scoreMessages[1].innerHTML = aiScore;
     });
+});
+
+resetScoreBtn.addEventListener("click", function () {
+   playerScore = 0;
+   aiScore = 0;
+   scoreMessages[0].innerHTML = playerScore;
+   scoreMessages[1].innerHTML = aiScore;
+   gameBroadcaster.innerHTML = "";
 });
 
